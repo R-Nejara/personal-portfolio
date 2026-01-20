@@ -19,8 +19,8 @@ function LeftSide() {
         die meine Begeisterung für Technik widerspiegeln – von virtuellen Showrooms bis zu interaktiven Experimenten.
       </p>
       <div className="landing-buttons">
-      <div className="btn project-btn">projekte</div>
-      <div className="btn contact-btn">kontakt</div>
+      <button className="btn project-btn">projekte</button>
+      <button className="btn contact-btn">kontakt</button>
       </div>
     </>
   )
