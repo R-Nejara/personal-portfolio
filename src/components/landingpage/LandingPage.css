@@ -10,10 +10,13 @@
   --blue-icon: #2E85B8;
   --white-primary: #ffffff;
   --white-secondary: #CDCDCD;
+  --white-socials: #D6E0DC;
+  --white-socials-border: #393E41;
   --border-white-button: #EDEBE8;
   --border-radius-icon: 0.5rem;
   --border-radius-button: 0.5rem;
   --button-background-primary: #090A4B;
+  --blue-profile-shadow: rgba(7, 107, 221, 0.07);
 }
 
 * {
@@ -21,23 +24,32 @@
 }
 
 .landing-main {
-  height: 100vh;
+  height: calc(100vh + 4rem);
   position: relative;
   background:
     linear-gradient(#0D0F16, #0E1324);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .landing-area {
-  width: 90vw;
+  max-width: 90vw;
   margin: 0 auto;
   padding-left: 6%;
   background: url('/public/images/darkblue_ellipse.svg') no-repeat center/ 500px 500px;
   background-repeat: no-repeat;
   background-position: 6% 0%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.chevron{
+  align-self: center;
+  font-size: 2.5rem;
+  color:var(--white-primary);
+  margin-top: 4rem;
 }
 
 /*
@@ -155,4 +167,37 @@
 .contact-btn {
   background: none;
   border: 0.1rem solid var(--white-secondary)
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-img {
+  width: 23rem;
+  height: 23rem;
+  background-color: grey;
+  border-radius: 50%;
+  background: url('/public/images/Rayan_Nejara.jpg') no-repeat center;
+  background-size: 25rem;
+  background-position: 0 35%;
+  box-shadow: -5px 10px 10px var(--blue-profile-shadow);
+}
+
+.socials-list {
+  display: flex;
+  gap: 1.2rem;
+  list-style-type: none;
+}
+
+.socials {
+  font-size: 1.5rem;
+  color: var(--white-socials);
+  border: 2px solid var(--white-socials-border);
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
 }
