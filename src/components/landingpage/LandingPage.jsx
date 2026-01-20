@@ -8,7 +8,6 @@ function LandingPage() {
       <main className="landing-main">
         <div className="landing-area">
           <LeftSide />
-          <div className="ambiente-circle"></div>
         </div>
       </main>
     </>
