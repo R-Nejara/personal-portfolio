@@ -2,8 +2,8 @@ function LeftSide() {
 
   return (
     <>
-      <h4 className="intruduction-title">web developer & ui/ux designer</h4>
-      <h1 className="name">rayan nejara</h1>
+      <h4 className="introduction-title">web developer & ui/ux designer</h4>
+      <h1 className="name"><span className="first-name">rayan</span><span className="last-name">nejara</span></h1>
       <h3 className="location"><i class="gps fa-solid fa-location-dot"></i><span>germany</span></h3>
       <div className="tech-stack">
         <ul className="skill-list">
