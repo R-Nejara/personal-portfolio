@@ -1,4 +1,20 @@
-.landing-area{
+.landing-main {
   background: linear-gradient(#0D0F16, #0E1324);
   height: 100vh;
 }
+
+.landing-area {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.ambiente-circle {
+  position: absolute;
+  top: 10rem;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-color: rgba(69, 143, 158, 0%);
+  box-shadow: 0px 4px 4px #0D2C92;
+}
+
