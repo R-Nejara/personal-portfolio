@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import './LandingPage.css'
 import LeftSide from './landingpage_components/LeftSide'
 import RightSide from './landingpage_components/RightSide'
 
 function LandingPage() {
+
+  const [active, setActive] = useState(false);
 
   return (
     <>
@@ -11,7 +14,7 @@ function LandingPage() {
           <LeftSide />
           <RightSide />
         </div>
-        <div className="chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        <div onClick={() => { setActive(true); handleClick(); }} className={`chevron ${active ? "scrolldown-disappear" : ""}`}><i className="fa-solid fa-chevron-down"></i></div>
       </main>
     </>
   )

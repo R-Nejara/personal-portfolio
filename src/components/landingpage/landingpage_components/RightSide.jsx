@@ -6,9 +6,9 @@ function RightSide() {
         <div className="profile-section">
           <div className="profile-img"></div>
           <ul className="socials-list">
-            <li className="socials"><i class="fa-brands fa-github"></i></li>
-            <li className="socials"><i class="fa-brands fa-linkedin"></i></li>
-            <li className="socials"><i class="fa-brands fa-instagram"></i></li>
+            <a href="https://www.GitHub.com/R-Nejara"><button className="btn socials"><i className="fa-brands fa-github"></i></button></a>
+            <a href="https://www.linkedin.com/in/rayannejara/"><button className="btn socials"><i className="fa-brands fa-linkedin"></i></button></a>
+            <a href="https://www.instagram.com/rayan_nejara/"><button className="btn socials"><i className="fa-brands fa-instagram"></i></button></a>
           </ul>
         </div>
       </main>
