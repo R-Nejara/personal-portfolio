@@ -22,6 +22,9 @@
 * {
   font-family: Inter;
 }
+html{
+  background-color: #0D0F16;
+}
 
 .landing-main {
   height: calc(100vh + 4rem);
