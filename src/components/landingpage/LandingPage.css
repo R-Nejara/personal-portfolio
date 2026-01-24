@@ -22,7 +22,8 @@
 * {
   font-family: Inter;
 }
-html{
+
+html {
   background-color: #0D0F16;
 }
 
@@ -227,4 +228,29 @@ html{
 
 .socials:hover {
   background-color: rgba(14, 19, 35, 1);
+}
+
+.custom-shape-divider-bottom-1769281786 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+}
+
+.custom-shape-divider-bottom-1769281786 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  max-width: 1920px;
+  height: 180px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1769281786 .shape-fill {
+  fill: #fff;
 }

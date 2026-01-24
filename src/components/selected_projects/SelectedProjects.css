@@ -1,0 +1,19 @@
+.selected-projects-main {
+  background-color: #111827;
+}
+
+.selected-projects-area {
+  margin: 0 auto;
+  max-width: 80vw;
+  height: 100vh;
+}
+
+.card-section {
+  background-color: green;
+}
+
+.card {
+  width: 12rem;
+  height: 12rem;
+  background-color: #030712;
+}
