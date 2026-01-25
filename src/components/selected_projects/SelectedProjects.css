@@ -1,6 +1,8 @@
 .selected-projects-main {
-  background-color: #111827;
+  /*background-color: #111827;*/
+  min-height: 100vh;
 }
+
 
 .selected-projects-area {
   margin: 0 auto;

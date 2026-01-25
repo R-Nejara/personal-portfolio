@@ -23,15 +23,17 @@ function LandingPage() {
   }, []);
 
   return (
-    <main className="landing-main">
-      <div className="landing-area">
-        <LeftSide />
-        <RightSide />
-      </div>
-      <div className={`chevron ${active ? "scrolldown-disappear" : ""}`}>
-        <i className="fa-solid fa-chevron-down"></i>
-      </div>
-    </main>
+    <>
+      <main className="landing-main">
+        <div className="landing-area">
+          <LeftSide />
+          <RightSide />
+        </div>
+        <div className={`chevron ${active ? "scrolldown-disappear" : ""}`}>
+          <i className="fa-solid fa-chevron-down"></i>
+        </div>
+      </main>
+    </>
   );
 }
 

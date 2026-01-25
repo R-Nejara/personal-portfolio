@@ -21,6 +21,7 @@
 
 * {
   font-family: Inter;
+  box-sizing: border-box;
 }
 
 html {
@@ -31,8 +32,8 @@ html {
   background:
     linear-gradient(#0D0F16, #0E1324);
   overflow: hidden;
-  height: 100vh;
-  max-height: 1200px;
+  /*max-height: 1200px;*/
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +59,6 @@ html {
   display: flex;
   justify-content: center;
   animation: floatY 2s ease-in-out infinite;
-  cursor: pointer;
   transition: 200ms ease-in;
 }
 
@@ -142,9 +142,6 @@ html {
   font-size: 1.5rem;
 }
 
-.icon-border>i:hover {
-  font-size: 1.35rem;
-}
 
 .icon-border {
   padding: 0.75rem;
@@ -158,8 +155,10 @@ html {
 .person-description {
   color: var(--white-secondary);
   line-height: 1.5;
-  width: 35rem;
+  max-width: 35rem;
   margin-block: 1rem;
+  margin: 1 auto;
+
 }
 
 .landing-buttons {
@@ -254,11 +253,53 @@ html {
   background-color: rgba(14, 19, 35, 1);
 }
 
-@media screen and(max-width:1220px) {
-  .socials {
-    font-size: 5rem;
+@media screen and (max-width: 1400px) {
+  .profile-section {
+    display: none;
+
+  }
+
+  .skill-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .skill {
+    font-size: 1rem;
+  }
+
+  .icon-border {
+    padding: 0.4rem;
+  }
+
+  .icon-border>i {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .skill {
+    display: none;
+  }
+
+  .person-description {
+    width: 500px;
   }
 }
+
+@media screen and (max-width: 567px) {
+  .skill {
+    display: none;
+  }
+
+  .person-description {
+    width: 350px;
+  }
+}
+
 
 @keyframes floatY {
   0% {
