@@ -20,7 +20,7 @@ function LeftSide() {
           die meine Begeisterung für Technik widerspiegeln – von virtuellen Showrooms bis zu interaktiven Experimenten.
         </p>
         <div className="landing-buttons">
-          <a href="#"><button className="btn project-btn">projekte<i class="fa-solid fa-arrow-down"></i></button></a>
+          <a href="#"><button className="btn project-btn">projekte <i className="fa-solid fa-arrow-down"></i></button></a>
           <a href="#"><button className="btn contact-btn">kontakt</button></a>
         </div>
       </main>

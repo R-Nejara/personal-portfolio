@@ -4,7 +4,8 @@
 
 .selected-projects-area {
   margin: 0 auto;
-  max-width: 80vw;
+  width: 80vw;
+  max-width: 1920px;
   height: 100vh;
 }
 
