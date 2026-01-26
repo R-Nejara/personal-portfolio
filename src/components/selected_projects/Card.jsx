@@ -18,7 +18,7 @@ function Card(props) {
             {props.data.description}
           </p>
         </div>
-        <a href="#"><button className="btn card-button"><i className="fa-solid fa-book-open"></i> Mehr</button></a>
+        <a href={props.data.link}><button className="btn card-button"><i className="fa-solid fa-book-open"></i> GitHub</button></a>
       </div>
     </>
   )
