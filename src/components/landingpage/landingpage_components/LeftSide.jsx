@@ -21,7 +21,7 @@ function LeftSide() {
         </p>
         <div className="landing-buttons">
           <a href="#cards"><button className="btn project-btn">projekte <i className="fa-solid fa-arrow-down"></i></button></a>
-          <a href="#"><button className="btn contact-btn">kontakt</button></a>
+          <a href="#about"><button className="btn contact-btn">über</button></a>
         </div>
       </main>
     </>
