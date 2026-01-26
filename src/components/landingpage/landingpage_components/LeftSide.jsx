@@ -5,7 +5,7 @@ function LeftSide() {
       <main>
         <h4 className="introduction-title">web developer & ui/ux designer</h4>
         <h1 className="name"><span className="first-name">rayan</span><span className="last-name">nejara</span></h1>
-        <h3 className="location"><i class="gps fa-solid fa-location-dot"></i><span>germany</span></h3>
+        <h3 className="location"><i className="gps fa-solid fa-location-dot"></i><span>germany</span></h3>
         <div className="tech-stack">
           <ul className="skill-list">
             <li className="skill skill1"><div className="icon-border"><i className="fa-brands fa-figma"></i></div><span>Figma</span></li>
