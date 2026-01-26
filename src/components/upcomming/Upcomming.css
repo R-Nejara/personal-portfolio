@@ -72,6 +72,11 @@
   color: #777373;
   background-color: #35323A;
 }
+.wip-text{
+color: gray;
+  font-size: 0.6rem;
+  margin-top: 0.6rem;
+}
 
 @media screen and (max-width:900px) {
   .upcomming-img img {
