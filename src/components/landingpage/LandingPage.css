@@ -22,6 +22,7 @@
 * {
   font-family: Inter;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -165,17 +166,6 @@ html {
   display: flex;
   gap: 2rem;
   margin-top: 5rem;
-}
-
-.btn {
-  /*padding: 0.75rem 1.5rem;*/
-  /*border: none;*/
-  /*border-radius: var(--border-radius-button);*/
-  /*color: var(--border-white-button);*/
-  /*text-transform: capitalize;*/
-  /*font-size: 1.2rem;*/
-  /*display: flex;*/
-  /*gap: 0.5rem;*/
 }
 
 .btn {

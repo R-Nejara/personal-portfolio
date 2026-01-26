@@ -16,11 +16,12 @@ function SelectedProjects() {
             <h3 className="description-heading">eine zusammenfassung von meinen Projekten
               mit Dokumentierung auf Github</h3>
           </div>
-          <div className="card-section">
+          <div id='cards' className="card-section">
             {data.map((content) => {
               return <Card data={content} />
             })}
           </div>
+          <a href="https://github.com/R-Nejara?tab=repositories"><button className="btn card-button all-projects-btn">Alle Projekte <i className="fa-brands fa-github"></i></button></a>
         </div>
       </div>
     </>

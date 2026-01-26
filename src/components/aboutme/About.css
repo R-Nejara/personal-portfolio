@@ -1,0 +1,58 @@
+
+.about-main{
+  background: linear-gradient(#0C1120, #0E1323);
+  position: relative;
+  overflow: hidden;
+}
+.about-section{
+  max-width: 80vw;
+  /* min-width: 570px; */
+  margin: 0 auto;
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-type-title {
+  color: #3B96BE;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-title {
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.about-description {
+  color: #BFC6D3;
+  font-size: 1.5rem;
+  width: 40rem;
+  line-height: 1.3;
+}
+.car-img{
+  position: absolute;
+  bottom: 0;
+  left: 0rem;
+  opacity: 0.04;
+}
+.car-img img{
+width: 70rem;
+}
+
+@media screen and (max-width:725px){
+  .about-description{
+    width: 30rem;
+  }
+  .car-img{
+    display: none;
+  }
+}
+@media screen and (max-width:520px){
+  .about-description{
+    width: 25rem;
+  }
+}
