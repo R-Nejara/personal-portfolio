@@ -8,7 +8,6 @@ function Footer() {
         <div className="footer-section">
           <div className="footer-section1">
             <div className="footer-profile">
-              <img src="/images/Rayan_Nejara.jpg" alt="rayan_portrait" />
               <h2>Rayan Nejara</h2>
             </div>
             <p className="footer-section1-description">Creating exceptional digital experiences through innovative design and development.</p>

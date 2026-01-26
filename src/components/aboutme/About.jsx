@@ -5,7 +5,7 @@ function About() {
     <>
       <div id='about' className="about-main">
         <div className="about-section">
-          <div className="car-img"><img src="/public/images/Car.png" alt=""/></div>
+          <div className="car-img"><img src="public/images/Car.png" alt=""/></div>
           <h2 className="about-type-title">über mich</h2>
           <h1 className="about-title">wer bin ich?</h1>
           <p className="about-description">Hey, Ich bin <b>Rayan und 20 Jahre jung.</b><br />
