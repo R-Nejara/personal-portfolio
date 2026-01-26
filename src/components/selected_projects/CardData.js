@@ -1,8 +1,12 @@
+import carImg from "/images/Car.png"
+import coinImg from "/images/Coin.png"
+import figureImg from "/images/Figure.png"
+
 export default [
   {
-    "img": "/images/Car.png",
+    "img": carImg,
     "title": "car showroom",
-    "link":"https://github.com/R-Nejara/threejs-car-showroom",
+    "link": "https://github.com/R-Nejara/threejs-car-showroom",
     "technologys": [
       "JavaScript",
       "ThreeJS"
@@ -10,9 +14,9 @@ export default [
     "description": "Ich entwickelte einen interaktiven 3D Autoshowroom. Vom Blender-Modell bis zur Three.js-Programmierung erstellte ich alle Features wie Licht- und Tag-Nacht-Steuerung selbst."
   },
   {
-    "img": "/images/Coin.png",
+    "img": coinImg,
     "title": "idle clicker-game",
-    "link":"https://gx.games/tr/games/3jdbmc/schubishooter/",
+    "link": "https://gx.games/tr/games/3jdbmc/schubishooter/",
     "technologys": [
       "GameMaker",
       "Figma"
@@ -20,8 +24,8 @@ export default [
     "description": "Im Rahmen der Fachoberschule entstand ein Idle-Clicker-Spiel. Das Spielkonzept wurde in Figma entworfen und anschließend in GameMaker programmiert."
   },
   {
-    "img": "/images/Figure.png",
-    "link":"https://github.com/R-Nejara/blocky-portfolio-game",
+    "img": figureImg,
+    "link": "https://github.com/R-Nejara/blocky-portfolio-game",
     "title": "block portfolio",
     "technologys": [
       "JavaScript",
