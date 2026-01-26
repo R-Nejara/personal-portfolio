@@ -7,7 +7,7 @@ function SelectedProjects() {
   return (
     <>
       <div className="selected-projects-main">
-        <div className="selected-projects-area">
+        <div id='cards' className="selected-projects-area">
           <div className="title">
           </div>
           <div className="title">
@@ -16,7 +16,7 @@ function SelectedProjects() {
             <h3 className="description-heading">eine zusammenfassung von meinen Projekten
               mit Dokumentierung auf Github</h3>
           </div>
-          <div id='cards' className="card-section">
+          <div  className="card-section">
             {data.map((content) => {
               return <Card data={content} />
             })}

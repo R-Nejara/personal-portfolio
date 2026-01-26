@@ -3,7 +3,7 @@ function About() {
 
   return (
     <>
-      <div className="about-main">
+      <div id='about' className="about-main">
         <div className="about-section">
           <div className="car-img"><img src="/public/images/Car.png" alt=""/></div>
           <h2 className="about-type-title">über mich</h2>
