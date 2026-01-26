@@ -72,3 +72,27 @@
   color: #777373;
   background-color: #35323A;
 }
+
+@media screen and (max-width:900px) {
+  .upcomming-img img {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .upcomming-description{
+    width: 460px;
+  }
+  .upcomming-img img {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .upcomming-description{
+    width: 360px;
+  }
+  .upcomming-img img {
+    width: 350px;
+  }
+}
