@@ -13,27 +13,30 @@
   --white-socials: #D6E0DC;
   --white-socials-border: #393E41;
   --border-white-button: #EDEBE8;
-  --border-radius-icon: 0.5rem;
-  --border-radius-button: 0.5rem;
+  --border-radius-icon: 0.625rem;
+  --border-radius-button: 0.625rem;
   --button-background-primary: #090A4B;
   --blue-profile-shadow: rgba(7, 107, 221, 0.07);
+  --bg-dark: #0D0F16;
+  --bg-dark-secondary: #0E1324;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 html {
-  background-color: #0D0F16;
+  background-color: var(--bg-dark);
 }
 
 .landing-main {
   background:
-    linear-gradient(#0D0F16, #0E1324);
+    linear-gradient(var(--bg-dark), var(--bg-dark-secondary));
   overflow: hidden;
-  /*max-height: 1200px;*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -60,17 +63,18 @@ html {
   display: flex;
   justify-content: center;
   animation: floatY 2s ease-in-out infinite;
-  transition: 200ms ease-in;
+  transition: var(--transition-smooth);
+  opacity: 0.6;
 }
 
 .scrolldown-disappear {
-  transition: 200ms ease-in;
+  transition: var(--transition-smooth);
   opacity: 0;
 }
 
 /*
 * ========
-* LeftSide 
+* LeftSide
 * ========
 */
 
@@ -78,11 +82,13 @@ html {
   font-weight: 500;
   text-transform: uppercase;
   color: var(--heading-secondary);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15em;
+  font-size: 1rem;
 }
 
 .name {
   font-size: 6rem;
+  line-height: 1.1;
 }
 
 .first-name {
@@ -115,6 +121,10 @@ html {
 
 .location {
   margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .skill-list {
@@ -130,79 +140,100 @@ html {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  transition: transform var(--transition-smooth);
+}
+
+.skill:hover {
+  transform: translateY(-3px);
 }
 
 
 .skill>span {
   display: block;
   color: var(--white-secondary);
+  font-size: 0.95rem;
 }
 
 .icon-border>i {
   color: var(--blue-icon);
   font-size: 1.5rem;
+  transition: color var(--transition-smooth);
+}
+
+.skill:hover .icon-border>i {
+  color: var(--blue-primary);
 }
 
 
 .icon-border {
   padding: 0.75rem;
   border-radius: var(--border-radius-icon);
-  border: 0.1rem solid var(--white-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color var(--transition-smooth), background var(--transition-smooth);
+}
+
+.skill:hover .icon-border {
+  border-color: rgba(112, 217, 214, 0.3);
+  background: rgba(112, 217, 214, 0.05);
 }
 
 .person-description {
   color: var(--white-secondary);
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 35rem;
   margin-block: 1rem;
-  margin: 1 auto;
+  font-size: 1.1rem;
 
 }
 
 .landing-buttons {
   display: flex;
-  gap: 2rem;
-  margin-top: 5rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .btn {
-  transition: 200ms ease-in;
-  padding: 1rem 2rem;
+  transition: var(--transition-smooth);
+  padding: 0.9rem 2rem;
   color: #fff;
   text-transform: capitalize;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 600;
   border: none;
   border-radius: 10px;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .contact-btn {
   background: none;
-  border: 2px solid #393E41;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .project-btn {
   background-color: #1666AD;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 
 .btn:hover {
   cursor: pointer;
+  transform: translateY(-2px);
 }
 
 .project-btn:hover {
-  background-color: rgba(22, 102, 173, 0.1);
-  border: 2px solid #fff;
+  background-color: rgba(22, 102, 173, 0.15);
+  border: 1px solid rgba(112, 217, 214, 0.4);
+  box-shadow: 0 4px 20px rgba(22, 102, 173, 0.3);
 }
 
 .contact-btn:hover {
-
-  border: 2px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .profile-section {
@@ -220,27 +251,33 @@ html {
   background: url('/public/images/Rayan_Nejara.jpg') no-repeat center;
   background-size: 25rem;
   background-position: 0 35%;
-  box-shadow: -5px 10px 10px var(--blue-profile-shadow);
+  box-shadow: -5px 10px 30px var(--blue-profile-shadow);
+  border: 3px solid rgba(255, 255, 255, 0.08);
 }
 
 .socials-list {
   display: flex;
-  gap: 1.2rem;
+  gap: 1rem;
   list-style-type: none;
 }
 
 .socials {
   font-size: 1.5rem;
   color: var(--white-socials);
-  border: 2px solid var(--white-socials-border);
-  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
   padding-inline: 1rem;
   padding-block: 0.5rem;
-  background: none
+  background: rgba(255, 255, 255, 0.03);
+  transition: var(--transition-smooth);
+  cursor: pointer;
 }
 
 .socials:hover {
-  background-color: rgba(14, 19, 35, 1);
+  background-color: rgba(112, 217, 214, 0.08);
+  border-color: rgba(112, 217, 214, 0.25);
+  color: var(--blue-primary);
+  transform: translateY(-2px);
 }
 
 @media screen and (max-width: 1400px) {
