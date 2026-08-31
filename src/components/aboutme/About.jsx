@@ -9,7 +9,7 @@ function About() {
           <div className="car-img"><img src={carImg} alt=""/></div>
           <h2 className="about-type-title">über mich</h2>
           <h1 className="about-title">wer bin ich?</h1>
-          <p className="about-description">Hey, Ich bin <b>Rayan und 21 Jahre jung.</b><br />
+          <p className="about-description">Hey, Ich bin <b>Rayan und 20 Jahre jung.</b><br />
             Meine Technik Begeisterung begann bereits im Alter von elf Jahren, wobei ich <b>mit 13 schon meine erste Webseite entwickelte.</b><br /><br />
             Das Gefühl etwas<b> zu Entwickeln, was es davor noch nicht gab</b> ist
             das, was mich heute noch dazu bewegt immer wieder neue Ideen umzusetzen.<br /><br />
